@@ -33,7 +33,7 @@ def get_audio_lengths(folder):
         if filename.endswith('.mp3'):
             audio_path = os.path.join(folder, filename)
             audio_segment = AudioSegment.from_file(audio_path)
-            lengths[filename] = len(audio_segment) / 1000.0  # Convert to seconds
+            lengths[filename] = len(audio_segment) / 1000.0  
             total_time += lengths[filename]
     return lengths, total_time
 
@@ -57,7 +57,7 @@ def check_folder_b(folder):
 
 def insert_and_scroll(text):
     history_text.insert(tk.END, text)
-    history_text.see(tk.END)  # Scroll to the end of the text widget
+    history_text.see(tk.END)
 
 def reorganize_audio_files_with_limits(folder_a, folder_b, folder_c, progress_var, history_text):
     os.makedirs(folder_c, exist_ok=True)
@@ -88,7 +88,7 @@ def reorganize_audio_files_with_limits(folder_a, folder_b, folder_c, progress_va
             insert_and_scroll(f"Including {filename} (Prelude file) unchanged.\n")
             audio_segment = AudioSegment.from_file(os.path.join(folder_a, filename))
             audio_segment.export(os.path.join(folder_c, filename), format="mp3")
-            remaining_time_from_a -= duration  # Deduct prelude duration
+            remaining_time_from_a -= duration 
             continue
 
         combined_audio = AudioSegment.silent(duration=0)
