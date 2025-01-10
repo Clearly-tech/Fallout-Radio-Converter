@@ -22,3 +22,13 @@ Steps to convert music:
 5. make a new ba2 using the archive2.exe.
 6. Drag n Drop the music folder into the newly created ba2 and save.
 7. use a mod manager to import it to game.
+
+
+
+
+
+
+
+
+
+Fallout 76 *Currently not working on newest patch*
