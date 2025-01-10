@@ -2,7 +2,7 @@
 
 ## Overview
 
-Audio Reorganizer is a Python application that processes audio files in specified folders. It calculates the total duration of audio files in the "Fallout Default" and "Your Songs" folders, and then reorganizes audio files from these folders into a specified output folder, maintaining specific time limits.
+Is a Python application that processes audio files in specified folders. It calculates the total duration of audio files in the "Fallout Default" and "Your Songs" folders, and then reorganizes audio files from these folders into a specified output folder, maintaining specific time limits.
 
 ## Features
 
